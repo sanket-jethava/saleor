@@ -781,16 +781,19 @@ sftp = ["paramiko"]
 
 [[package]]
 name = "django-stubs"
-version = "1.8.0"
+version = "1.10.1"
 description = "Mypy stubs for Django"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 django = "*"
-django-stubs-ext = "*"
-mypy = ">=0.790"
+django-stubs-ext = ">=0.4.0"
+mypy = ">=0.930,<0.950"
+tomli = "*"
+types-pytz = "*"
+types-PyYAML = "*"
 typing-extensions = "*"
 
 [[package]]
@@ -2572,6 +2575,14 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "types-pyyaml"
+version = "6.0.7"
+description = "Typing stubs for PyYAML"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "types-requests"
 version = "2.27.25"
 description = "Typing stubs for requests"
@@ -2798,7 +2809,7 @@ test = ["pytest"]
 [metadata]
 lock-version = "1.1"
 python-versions = "~3.9"
-content-hash = "f478c2c098b8dc32b49240d72eaee134cc8fe09a7198d521954faa3298cd3fc8"
+content-hash = "3f1f5b38696a86e5289792405862d9e3bb5e9092ea0b12c04a6eac83c7d35b72"
 
 [metadata.files]
 adyen = [
@@ -3258,8 +3269,8 @@ django-storages = [
     {file = "django_storages-1.12.3-py3-none-any.whl", hash = "sha256:204a99f218b747c46edbfeeb1310d357f83f90fa6a6024d8d0a3f422570cee84"},
 ]
 django-stubs = [
-    {file = "django-stubs-1.8.0.tar.gz", hash = "sha256:717967d7fee0a6af0746724a0be80d72831a982a40fa8f245a6a46f4cafd157b"},
-    {file = "django_stubs-1.8.0-py3-none-any.whl", hash = "sha256:bde9e44e3c4574c2454e74a3e607cc3bc23b0441bb7d1312cd677d5e30984b74"},
+    {file = "django-stubs-1.10.1.tar.gz", hash = "sha256:2ec21fc14dba392156e0ec8438e1863c86ddb295f1c8d88eecd7e0e04977c843"},
+    {file = "django_stubs-1.10.1-py3-none-any.whl", hash = "sha256:dfffa933e3c7f5cae92c860fbd6cf4ae58c4f78eed93843612f863207c9e0e1a"},
 ]
 django-stubs-ext = [
     {file = "django-stubs-ext-0.4.0.tar.gz", hash = "sha256:3104c4748c34bd741c310a3e6af90dffba46e41bccbe243896e38a708262876b"},
@@ -4319,6 +4330,10 @@ types-python-dateutil = [
 types-pytz = [
     {file = "types-pytz-2021.3.7.tar.gz", hash = "sha256:11d5ba06268167953ccc4a3eee192c24b42d00d2aef456c160a8798893cb2081"},
     {file = "types_pytz-2021.3.7-py3-none-any.whl", hash = "sha256:0f67528c1df2017b61a45f2f9cfa2d45b16ce1dc135f09c7d2fd258998aade58"},
+]
+types-pyyaml = [
+    {file = "types-PyYAML-6.0.7.tar.gz", hash = "sha256:59480cf44595d836aaae050f35e3c39f197f3a833679ef3978d97aa9f2fb7def"},
+    {file = "types_PyYAML-6.0.7-py3-none-any.whl", hash = "sha256:7b273a34f32af9910cf9405728c9d2ad3afc4be63e4048091a1a73d76681fe67"},
 ]
 types-requests = [
     {file = "types-requests-2.27.25.tar.gz", hash = "sha256:805ae7e38fd9d157153066dc4381cf585fd34dfa212f2fc1fece248c05aac571"},
